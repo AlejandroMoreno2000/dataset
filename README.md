@@ -82,11 +82,11 @@
         │   ├── gonnacry
         │   ├── gonnacry_Camellia_256_CBC
         │   ├── gonnacry_CHACHA20_POLY1305
-        │   ├── gonnacry CHACHA20_POLY1305.zip
+        │   ├── gonnacry_CHACHA20_POLY1305.zip
         │   ├── gonnacry_DES_CBC
-        │   ├── gonnacry DES-CBC.zip
+        │   ├── gonnacry_DES-CBC.zip
         │   ├── gonnacry_SM4_CBC
-        │   ├── gonnacry SM4_CBC.zip
+        │   ├── gonnacry_SM4_CBC.zip
         │   └── gonnacry.zip
         ├── mirai
         │   ├── mirai.dbg
