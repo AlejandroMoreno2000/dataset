@@ -1,0 +1,11 @@
+/usr/bin/mpg321 -n 100 /home/nics/Music/bastille.mp3
+ffmpeg -f lavfi -i color=c=black:s=640x480:d=2 -vf "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Test Video':fontcolor=white:fontsize=24:x=(w-text_w)/2:y=(h-text_h)/2" -vcodec libx264 /home/nics/Videos/test_video.h264 -y
+ffmpeg -f lavfi -i testsrc=duration=2:size=640x480:rate=30 -vcodec libx264 /home/nics/Videos/test_vid.h264 -y
+MP4Box -add /home/nics/Videos/test_vid.h264 /home/nics/Videos/test_vid.mp4
+ping google.com
+netstat -a
+wget https://raw.githubusercontent.com/hishamhm/htop/master/scripts/MakeHeader.py
+traceroute google.com
+dig google.com
+gcc -o prueba /home/nics/Desktop/dataset/goodware/proyecto-ejecucion/main.c
+
