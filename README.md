@@ -1,3 +1,12 @@
+# ⚠️ **¡ATENCIÓN!** ⚠️
+
+🚨 **Este repositorio contiene múltiples familias de malware activas, capaces de infectar un equipo.**  
+💀 **Estos archivos están diseñados para sistemas Linux.**  
+
+❗ **Ejecutarlos sin precaución podría comprometer la seguridad de tu equipo.**  
+🔬 Solo deben ser utilizados con fines educativos o de investigación en entornos controlados (máquinas virtuales, sandboxes).  
+🔥 **¡Úsalo bajo tu propio riesgo!**  
+
 ```plaintext
 ├── goodware
 │   ├── comandos.txt
