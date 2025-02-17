@@ -1,3 +1,4 @@
+```plaintext
 ├── goodware
 │   ├── comandos.txt
 │   ├── ficheros-auxiliares
