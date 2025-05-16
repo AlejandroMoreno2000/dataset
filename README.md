@@ -22,7 +22,7 @@ Este repositorio está destinado exclusivamente a **fines académicos y de inves
 
 - No se debe ejecutar ningún archivo fuera de un entorno totalmente **aislado y sin acceso a red** (por ejemplo, máquinas virtuales con snapshot o sandboxes dedicadas).
 - La ejecución en entornos no controlados puede comprometer el sistema y poner en riesgo la seguridad de otros dispositivos.
-- El autor y la universidad **no se responsabilizan** del uso indebido de los archivos.
+- El autor **no se responsabilizan** del uso indebido de los archivos.
 
 ## Estructura del repositorio
 
