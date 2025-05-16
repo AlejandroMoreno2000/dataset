@@ -1,11 +1,30 @@
-# ⚠️ **¡ATENCIÓN!** ⚠️
+# Conjunto de muestras para la captura de trazas electromagnéticas
 
-🚨 **Este repositorio contiene múltiples familias de malware activas, capaces de infectar un equipo.**  
-💀 **Estos archivos están diseñados para sistemas Linux.**  
+Este repositorio contiene los binarios empleados para generar trazas electromagnéticas (EM) en el contexto del Trabajo de Fin de Grado (TFG) titulado _"Detección de malware mediante el estudio de la emanación electromagnética"_. Las muestras recopiladas se utilizaron exclusivamente para ejecutar software en un entorno controlado y registrar su comportamiento físico mediante instrumentación externa.
 
-❗ **Ejecutarlos sin precaución podría comprometer la seguridad de tu equipo.**  
-🔬 Solo deben ser utilizados con fines educativos o de investigación en entornos controlados (máquinas virtuales, sandboxes).  
-🔥 **¡Úsalo bajo tu propio riesgo!**  
+## Contenido
+
+Las muestras incluidas abarcan una amplia variedad de categorías y transformaciones:
+
+- **Malware funcional**: GonnaCry, Mirai, Gafgyt, Troyano.
+- **Goodware**: Aplicaciones legítimas utilizadas como referencia para el entrenamiento de modelos.
+- **Muestras ofuscadas**: Versiones modificadas mediante técnicas de virtualización, empaquetado, opacidad, división, aplanamiento, y anti-análisis.
+
+> **Nota:** Algunas muestras han sido alteradas específicamente para simular entornos de evasión o representar técnicas avanzadas de ocultación.
+
+## Uso previsto
+
+Este repositorio está destinado exclusivamente a **fines académicos y de investigación**. Su uso está vinculado a la ejecución de software en condiciones controladas, con el objetivo de generar señales EM para su posterior análisis mediante modelos de clasificación basados en Machine Learning y Deep Learning.
+
+## Advertencia de seguridad
+
+**Este repositorio contiene muestras de malware real.**
+
+- No se debe ejecutar ningún archivo fuera de un entorno totalmente **aislado y sin acceso a red** (por ejemplo, máquinas virtuales con snapshot o sandboxes dedicadas).
+- La ejecución en entornos no controlados puede comprometer el sistema y poner en riesgo la seguridad de otros dispositivos.
+- El autor y la universidad **no se responsabilizan** del uso indebido de los archivos.
+
+## Estructura del repositorio
 
 ```plaintext
 ├── goodware
@@ -112,3 +131,17 @@
             ├── trojan_variante_4
             ├── trojan_variante_5
             └── trojan_variante_6
+
+```
+
+## Relación con el sistema de análisis y captura
+
+Este conjunto de muestras está directamente relacionado con los sistemas de captura y análisis desarrollados como parte del proyecto. Existen referencias cruzadas explícitas entre los archivos de este repositorio y los utilizados en:
+
+🔗 [Sistema de análisis y clasificación de trazas EM](https://github.com/AlejandroMoreno2000/analisis)  
+🔗 [Sistema de adquisición de señales electromagnéticas](https://github.com/AlejandroMoreno2000/adquisicion-datos)
+
+- En el sistema de **análisis**, las muestras aquí contenidas están mapeadas mediante listas de control denominadas `tagmaps`, que vinculan cada traza con el binario que la generó y su categoría correspondiente (tipo, familia, técnica de evasión...).
+- En el sistema de **adquisición**, los archivos incluidos se utilizaron como comandos de entrada (`cmdFile`) para generar las trazas EM, asegurando que la ejecución de cada muestra estuviera correctamente sincronizada con el osciloscopio mediante un wrapper dedicado.
+
+Ambos sistemas están diseñados para reproducir con precisión las condiciones del experimento y permitir la evaluación rigurosa de los modelos de detección.
